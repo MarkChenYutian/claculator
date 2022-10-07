@@ -1,7 +1,32 @@
 <!DOCTYPE html>
+<head>
+    <link href="https://markchenyutian.github.io/claculator/index.css" rel="stylesheet"/>
+</head>
 <html>
     <body>
+        <h3>THE <i>Clac</i>-ulator</h3>
         <div id="claculator-interactive" data-mode="embeddable"></div>
+        <h3>How to Use (Read Me!)</h3>
+        <ol>
+            <li>Enter some clac/exp expression in the input box</li>
+            <ol>
+                <li>Click "Run" to execute everything at once</li>
+                <li>Click "Step" to execute a single step of clac</li>
+            </ol>
+            <li>When "Show Trace" is on, you can see the history of stack and queue</li>
+            <li>When "Show Function" is on, you can see all the function (symbol) that is currently defined in clac</li>
+            <li>If the queue is empty, you can type new input into the input box to add token to the queue</li>
+            <li>If you want to reset clac (discard everything), click "Restart"</li>
+            <li>If <b>Clac Core Exception pops out, RESTART the clac before making any Step/Run</b></li>
+        </ol>
+        <h3>Known Caveats</h3>
+        <ol>
+            <li>When operates on large numbers, number will not overflow like C0.</li>
+            <li>When <b>Clac Core Exception</b> pops out, if one continue to press 'step', weird result will occur.</li>
+            <li>If anything unexpected happens, feel free to sent me (yutianch@andrew.cmu.edu) an email or open up an issue on <a href="https://github.com/MarkChenYutian/claculator">This GitHub Repo</a></href></li>
+        </ol>
+        <h3>Reference Clac/Exp Spec</h3>
+        <img src="https://user-images.githubusercontent.com/47029019/156901409-ec3e5341-5ccb-49c6-8235-5c43695e78e4.png" width="50%"/>
         <script src="https://markchenyutian.github.io/claculator/index.min.js"></script>
     </body>
 </html>
